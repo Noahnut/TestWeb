@@ -1,0 +1,11 @@
+#navbar  {
+    width: 100%;    
+}
+
+.container {
+    max-width: 100%;
+}
+
+#foodselected {
+    margin-right: 10px;
+}

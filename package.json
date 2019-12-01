@@ -1,0 +1,12 @@
+{
+    "name": "foodweb",
+    "engines": {
+        "node": "12.13.0"
+    },
+    "dependencies": {
+        "redis": "^2.8.0"
+    },
+    "scripts": {
+        "start": "node server.js"
+    }
+}
