@@ -4,6 +4,7 @@
         "node": "12.13.0"
     },
     "dependencies": {
+        "express": "^4.17.1",
         "redis": "^2.8.0"
     },
     "scripts": {

@@ -23,12 +23,14 @@
             <a class="navbar-brand" href="#">美食地圖</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                   <select v-model="foodselected" id="foodselected">
-                       <option disabled value="">食物類型</option>
-                   </select>
-                   
-                   <select v-model="placeSelected" id="foodselected">
+                    <select v-model="foodSelectedData.selectFood" id="foodselected">
+                        <option v-for="food in foodSelectedData.foodselected" v-bind:value="food.val">
+                            {{food.item}}
+                        </option>
+                    </select>
+                    <select v-model="placeSelected" id="placeselected">
                         <option disabled value="">地點</option>
+
                     </select>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -37,6 +39,7 @@
                 </form>
             </div>
         </nav>
+        <span>Selected: {{foodSelectedData.selectFood}}</span>
     </div>
     <script src="main.js"></script>
 </body>
